@@ -8,7 +8,6 @@ window.onload = function() {
         walls[index].addEventListener("mouseover",function() {
             walls[index].setAttribute("class", "boundary youlose");
             touch_wall = true;
-        
         });
     }
     let mouse_maze = document.getElementById("maze");
