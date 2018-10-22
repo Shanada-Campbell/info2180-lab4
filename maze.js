@@ -1,7 +1,4 @@
 window.onload = function() {
-    let wall = document.getElementById("boundary1");
-    wall.addEventListener("mouseover",function(){
-        wall.setAttribute("class","boundary youlose");
     let walls = document.querySelectorAll(".boundary");
     let touch_wall = false;
     for(let index = 0; index < walls.length-1; index++){
@@ -17,6 +14,5 @@ window.onload = function() {
                 walls[index].setAttribute("class","boundary youlose");
             }
         }
-    })
-    })
+    }); 
 }
