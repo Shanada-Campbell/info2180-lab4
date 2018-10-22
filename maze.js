@@ -14,5 +14,14 @@ window.onload = function() {
                 walls[index].setAttribute("class","boundary youlose");
             }
         }
-    }); 
+    });
+    let start_maze = document.getElementById("start");
+    start_maze.addEventListener("mouseover",function(){
+        let end_maze = document.getElementById("end");
+        end_maze.addEventListener("mouseover",function(){
+            if(touch_wall === false){
+                alert("You win!");
+            }
+        })
+    })
 }
