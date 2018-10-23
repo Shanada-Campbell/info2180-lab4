@@ -24,4 +24,12 @@ window.onload = function() {
             }
         })
     })
+    start_maze.addEventListener("click",function(){
+        if (touch_wall === true){
+            for(let index = 0;index < walls.length-1; index++){
+                walls[index].setAttribute("class","boundary");
+            }
+            touch_wall = false;
+        }
+    })
 }
