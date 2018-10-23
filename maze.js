@@ -63,12 +63,10 @@ window.onload = function() {
             touch_wall = false;
         }
     })
-    mouse_game.addEventListener("mouseover",function(){
-		if(touch_wall === true){
-			for(let index = 0; index < walls.length-1; index++){
-				walls[index].setAttribute("class","boundary youlose");
-			}
+    mouse_maze.addEventListener("mouseleave",function(){
+		for(let index = 0; index<walls.length-1; index++){
+			walls[index].setAttribute("class", "boundary youlose");
 		}
+        touch_wall = true;
 	});
-
 }
